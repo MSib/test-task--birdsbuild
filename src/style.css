@@ -1,0 +1,53 @@
+:root {
+  --c-blue-dark: #2d3b87;
+  --c-manatee: #969dc3;
+  --c-white: #fff;
+  --c-white-gray: #f4f5f9;
+  --c-platinum: #e0e3ee;
+  --c-blue-light: #616ca5;
+  --c-service-green: #69c57f;
+
+  --sz-desktop-l: 1200px;
+  --sz-desktop: 1200px;
+  --sz-tablet: 425px;
+  --sz-mobile: 320px;
+
+  --border-radius-small: 5px;
+  --border-radius: 10px;
+  --border-radius-large: 20px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  font-size: 13px;
+  line-height: 100%;
+  color: var(--c-blue-dark);
+  background-color: var(--c-white);
+}
+@media (min-width: 1024px) {
+  body {
+    padding-inline: 40px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1023px) {
+  body {
+    padding-inline: 20px;
+  }
+}
+@media (max-width: 424px) {
+  body {
+    padding-inline: 10px;
+  }
+}
+#app {
+  max-width: var(--sz-desktop-l);
+  width: 100%;
+  margin-inline: auto;
+}
+
+button {
+  cursor: pointer;
+}
